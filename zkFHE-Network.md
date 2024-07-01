@@ -1,0 +1,193 @@
+## Abstract
+
+## Overview
+
+
+The potential value of data is increasingly recognized by enterprises and individuals. People's daily behavioural data provides corrections and feedback for different technology products, creating economic value and social impact. The effective mining of data value and the avoidance of individual privacy violations as much as possible are the main pain points in the process of data monetization.
+
+Existing systems built from either zero-knowledge proofs, multi-party computations or other privacy-enhancing techniques cannot fully resolve the paradox of privacy protection and utilization of sensitive data, and various computational issues during data processing require further reliable integrity measures.
+
+Leveraging the benefits of traceability and programmability from blockchain-like techniques, PADO’s zkFHE protocol enables an open infrastructure for librating data value with verifiable and confidential data processes while individual and organization developers can selectively contribute with either security, functional scalability and effectivity to the network.
+
+The core advantages of zkFHE lie in its natural abilities from both zero-knowledge proofs and fully homomorphic encryptions, to perform customizable computations on encrypted data, with the correctness guaranteed by validity proofs for the whole computation circuits. The validity proofs solids the whole computation framework with cryptographic and computational trustlessness to facilitate the necessary security requirements of applications.
+
+## Roles in PADO Network
+
+* **Data Provider**
+
+  Data Provider is an individual or organization that provides computing data to PADO Network. The data from the Data Provider is encrypted by the FHE algorithm and then uploaded to decentralized storage blockchains such as Arweave and Filecoin. Data Provider can earn data fees.
+
+* **Worker**
+
+  Worker is a node of PADO Network, providing computing resources, running the zkFHE algorithm on encrypted data, and providing PADO Network with a confidential computing environment and resources. Worker needs to generate a zk proof while computing.
+
+  Worker also needs to provide the Data Encryption Public Key to Data Provider to encrypt the data, and at the same time, it needs to re-encrypt the confidential computation results into results that only the Network Consumer can decrypt.
+
+  zkFHE confidential computing can guarantee the confidentiality and integrity of computing. Workers can earn computing fees.
+
+* **Network Consumer**
+
+  Network Consumer is an individual or organization that uses PADO Network computing and data resources. Network Consumer can specify the encrypted data uploaded by the Data Provider to initiate a confidential computing task and obtain the results of the confidential computing task. Network Consumers are required to pay computing and data fees.
+
+* **Token Holder**
+
+  Token Holders are individuals and organizations that hold PADO Token. Token Holder can participate in community governance, including network protocol upgrades, network protocol parameter modifications, community fund use, etc.
+
+## Architecture
+
+Comprehensive consideration of multiple perspectives of decentralization, security and scalability, PADO Network is designed to separate consensus and computation. Workers mainly use the zkFHE algorithm to run confidential computation and generate proofs of computation. The correctness and integrity of computation is verified through PADO Contracts using blockchain consensus. At the same time, Worker management, data management, task management, fee management, and Worker incentives included in PADO Contracts all use the consensus of the blockchain.
+
+### Components of PADO Network
+
+* **Worker**
+
+  Worker is a node of PADO Network, providing computing resources, running the zkFHE algorithm on encrypted data, and providing PADO Network with a confidential computing environment and resources. Worker needs to generate a zk proof while computing.
+
+  Worker also needs to provide the Data Encryption Public Key to Data Provider to encrypt the data, and at the same time, it needs to re-encrypt the confidential computation results into results that only the Network Consumer can decrypt.
+
+  zkFHE confidential computing can guarantee the confidentiality and integrity of computing. Workers can earn computing fees.
+
+* **PADO Contracts**
+
+  PADO Contracts is a collection of blockchain contracts that can be deployed on multiple blockchains, including Ethereum, L2, AO, etc. PADO Contracts mainly include Worker management, data management, task management, fee management, Worker incentives, etc.
+
+* **PADO SDK**
+
+  PADO SDK is a collection of developer development tools. Developers can use the confidential computing capabilities of PADO Network through the SDK and develop various confidential computing applications based on PADO Network.
+
+* **PADO Scan**
+
+  PADO Scan is a user interface for viewing PADO Network information. PADO Scan can view Worker information, data information, task information, etc.
+
+### Logical Architecture
+
+The logical architecture is shown in the figure below:
+
+![zkFHE-architecture](./images/zkFHE-architecture2.png)
+
+#### Worker
+
+Worker is a node of PADO Network, providing computing resources。Worker consists of the following layers：
+
+* **Hardware**: The Hardware layer represents the supported zkFHE computing acceleration hardware. In order to improve efficiency, in addition to using the CPU for zkFHE computation, Worker will also support GPU, FPGA and AISC hardware acceleration computation.
+* **Library**: The Library layer represents the basic library. The basic library mainly includes FHE and zk algorithm libraries, P2P-related network libraries, and local storage libraries used to store Worker data.
+* **Core**: The Core layer represents the main functional processing module, including the following modules:
+  * Get Task: Obtain confidential computing tasks from Task Management of PADO Contracts.
+  * Chain Adaptation: Confidential computing tasks can be obtained from Task Management Contracts of multiple chains, and can support interaction with PADO Contracts of multiple chains.
+  * Resource Control: Control the use of Worker resources when confidential computing tasks are executed.
+  * Submit Result: Responsible for processing and submitting calculation results.
+  * Task Execution Environment: A true zkFHE execution environment for confidential computing tasks. PADO Network supports multiple types of computing tasks and needs to support multiple different Execution Environment.
+  * Key Management: Manage Worker’s public and private keys.
+* **RPC API**: The RPC API layer represents the interface provided by the Worker to the outside world. You can obtain the Worker status information and manage the Worker through the interface, etc.
+
+#### PADO Contracts
+
+PADO Contracts is a collection of blockchain contracts that can be deployed on multiple blockchains。You can refer to [the detailed contract design](https://github.com/pado-labs/zkFHE-Network-Docs/PADO-Contracts.md). PADO Contracts consists of the following parts:
+
+* **Worker Management**: Worker registration and staking, updating Worker information, obtaining Worker information, and Worker exiting PADO Network.
+* **Task Management:** Receive confidential computing tasks submitted by SDK, receive zkFHE computing results submitted by Worker and verify the results, and obtain pending tasks and completed tasks.
+* **Fee Management:** Settle the Network Consumer's fee to the Data Provider and Worker.
+* **Worker Incentive:** Responsible for the calculation of reward and penalty funds, providing rewards to honest and stable Workers and penalties to dishonest and unstable Workers.
+* **Native Token:** A Token contract on the blockchain. Incentivize network participants to provide computation powers for running verifiable confidential computations, to supply input data for application demands, to offer technical and security contributions for the whole ecosystem. For more information, please refer to [Economics](#economics).
+
+#### PADO SDK
+
+PADO SDK is a collection of developer development tools. Developers can use the confidential computing capabilities of PADO Network through the SDK and develop various confidential computing applications based on PADO Network. PADO SDK consists of the following parts:
+
+* **Key Management:** Responsible for providing zkFHE key generation and management interfaces to Data Provider and Network Consumer.
+* **Upload Data:** Responsible for encrypting Data Provider data and then uploading the encrypted data to the Storage Blockchain.
+* **Submit Task:** Provide Network Consumers with the ability to submit confidential computing tasks and pay fees.
+* **Get Result:** Provide the confidential computing task results to the Network Consumer. The Network Consumer obtains the encrypted results and then decrypts them locally.
+* **Developer Tool:** Compilation and debugging tools for developers.
+
+#### PADO Scan
+
+PADO Scan is a user interface for viewing PADO Network information. PADO Scan can view Worker information, data information, task information, etc.
+
+#### Storage Blockchain
+
+Storage Blockchain is used to store encrypted data of Data Provider, including Arweave, Filecoin, Ceramic and Greenfield, etc.
+
+#### Dapps
+
+Various ecological applications developed based on PADO SDK and PADO Contracts. Application types include Data Exchange, Decentralized Identity, MEV/Order Book DEX, Privacy Preserving ML, Confidentiality for DEPIN, etc.
+
+### Core Workflow
+
+The core workflow is shown in the figure below:
+
+![zkFHE-architecture-process](./images/zkFHE-architecture-process2.png)
+
+#### Register Worker
+
+After the Worker is started, it must be registered to the Worker Management of PADO Contracts and stake a certain number of PADO Token. Confidential computing tasks will only be dispatched to successfully registered Workers. The registered information includes name, description, owner address, machine resources, RPC address and port, Worker public key, etc.
+
+#### Submit Task and Get Data Encryption Public Key
+
+Network Consumer can submit a confidential computing task through an application developed based on PADO SDK. Initiating a confidential computing task requires paying a certain amount of computing and data fees. When Network Consumer initiates a task, it will pass its own Network Consumer Public Key, and the final encrypted computation result is only the private key corresponding to the Network Consumer Public Key can be decrypted.
+
+Then the PADO SDK forwards the Submit Task request to the Task Management of PADO Contacts. The Task Management selects the Workers who generate the Data Encryption Public Key and the Workers who execute the task. The two Worker groups can be the same.
+Then Workers return the Data Encryption Public Key to the Task Management contract.
+
+#### Upload Data
+
+Data Provider uses PADO SDK to obtain the Data Encryption Public Key required by the task from Task Management of PADO contacts.
+Then Data Provider use the FHE algorithm of PADO SDK and Data Encryption Public Key to encrypt the data and upload it to Storage Blockchain such as Arweave and Filecoin.
+
+#### zkFHE Computing
+
+The Workers who execute the task will get the task from the Task Management Contract, get the encrypted data from the Storage Blockchain, and then run the zkFHE computation while generating a computational proof.
+
+#### Result Re-encrypt
+
+The Workers who generate the Data Encryption Public Key will re-encrypt the confidential computation results using the Network Consumer Public Key, so that only the Network Consumer can decrypt the results.
+
+#### Proof Verify and Fee Settlement
+
+The Workers upload the encrypted results and computation proofs to the Task Management Contract. After the Task Management Contract verifies the correctness and integrity of the computation, it will trigger the Fee Management of PADO Contacts for fee settlement, and the fee will be distributed to the Data Providers and Workers corresponding to the task.At the same time, the Worker Incentive of PADO Contacts will be triggered to computation incentives for Workers.
+
+#### Decrypt Result
+
+Network Consumer will use its own private key and the FHE algorithm in the SDK to decrypt the computation results.
+
+## Economics
+The functionality of blockchain-like systems is based on a combination of cryptography and economic incentives. Cryptography restricts the actions of system participants for network security. On the other hand, economic incentives motivate participants to voluntarily contribute to the network's maintenance and capabilities using their own resources.
+
+PADO network operates as a chain-agnostic open computation layer. PADO achieves confidentiality and integrity for each computation task and input provider(s) with zkFHE and related cryptographic techniques.   
+
+Still under development, PADO will achieve resilience and adaptive security by using a token, the PADO token (F0), to incentivize network participants to provide computation powers for running verifiable confidential computations, to supply input data for application demands, to offer  technical and security contributions for the whole ecosystem.
+
+### The purpose of F0 token
+
+F0 serves as the mechanism for covering network operation fees, ensuring network maintenance and security through staking for achieving consensus, and determining PADO network’s values and technology objectives through voting on governance proposals.
+
+### Computation Fees
+
+To utilize the zkFHE computation network, computation fees were paid by network consumers with stable coins like USDT/USDC, while also support the payment of F0 with a discounted tariff. Note if a computation task involves any data inputs supplied by the data providers, the additional fees shall be added and shared by the providers according to the allocation plan specified in the task. 
+
+### Staking and Incentives
+
+Every participant within the network has the opportunity to stake F0 tokens, contributing to the network stability and earning rewards in return. For a worker operated by a computing power provider, he shall stake with enough F0s to be eligible for participating in the computations. It shall be clarified that in every single task, the computation fee paid by the network consumer will be legitimately distributed between the involved workers and F0 holders.
+
+The network incentives for F0 are primarily designed to benefit computing power providers, network security, and the developer community. Beyond the computation fee for the workers and related participants with staked F0s, PADO network shall incentivize the network contributors with F0 tokens periodically to maintain the network liveness and security.
+
+### Penalties
+
+To deter negative or malicious behavior within the network, the tokens will also be utilized as a punitive measure. Actions or situations that will trigger penalties include:
+
+- Inactive worker: Any worker that has been registered normally but was detected in an abnormal state will incur a minor penalty to compensate for the network operation cost.
+- Computation failure: Workers unable to derive a valid computation result like decryption failure and proof rejection will be fined with a certain portion of staked F0s. The collected fined tokens will be further burned according to the network rules and governance.
+- Privacy breach: Attempts to decrypt any ciphertexts except the agreed upon output of a requested computation are punishable. If the worker or other network participants was reported to such a criminal, he shall be fined with a a certain portion of staked F0s with an additional shashing about worker eligibility. The fined tokens will be further burned and rewarded to the informant.
+
+### Governance
+
+Holders of F0 possess the authority to actively engage in network governance, thereby shaping the trajectory and growth of the network. This involvement encompasses the initiation of proposals, voting procedures, and the refinement of core network parameters. Specifically, these governance responsibilities involve but are not limited to the following:
+
+- The minimum deposit of a worker.
+- The waiting period after the worker registers.
+- The waiting period after the worker resigns.
+- penalties
+- burn ratio of F0
+- …
+
+## Use Case

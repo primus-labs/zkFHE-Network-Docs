@@ -1,0 +1,557 @@
+<mxfile host="Electron" modified="2024-05-15T03:54:11.089Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.0.4 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="6h4EYm5RKSADgHl8Y4WK" version="24.0.4" type="device" pages="3">
+  <diagram name="第 1 页" id="-4aMPErC7N8ZvygQ49Cx">
+    <mxGraphModel dx="954" dy="727" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="XuzBIOFZBx4Q-mBygeml-16" value="Storage&lt;div&gt;Blockchain&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="177" y="794" width="826" height="92" as="geometry" />
+        </mxCell>
+        <mxCell id="QzRuw6ReyF2sy8QD4RSm-1" value="Worker" style="rounded=0;whiteSpace=wrap;html=1;align=left;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="177" y="406" width="633" height="374" as="geometry" />
+        </mxCell>
+        <mxCell id="QzRuw6ReyF2sy8QD4RSm-2" value="PADO&amp;nbsp;&lt;div&gt;SDK&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="178.5" y="305" width="822.5" height="87" as="geometry" />
+        </mxCell>
+        <mxCell id="QzRuw6ReyF2sy8QD4RSm-4" value="Library" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="247" y="605" width="520" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="QzRuw6ReyF2sy8QD4RSm-5" value="Apps" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="178.5" y="217" width="819.5" height="76" as="geometry" />
+        </mxCell>
+        <mxCell id="QzRuw6ReyF2sy8QD4RSm-6" value="Arweave" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="263" y="809.5" width="188" height="61" as="geometry" />
+        </mxCell>
+        <mxCell id="QzRuw6ReyF2sy8QD4RSm-8" value="FHE" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="300" y="622" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="QzRuw6ReyF2sy8QD4RSm-9" value="ZK" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="417" y="622" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="QzRuw6ReyF2sy8QD4RSm-10" value="core" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="247" y="485" width="519" height="111" as="geometry" />
+        </mxCell>
+        <mxCell id="QzRuw6ReyF2sy8QD4RSm-11" value="Get Task" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="300" y="495" width="123" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="QzRuw6ReyF2sy8QD4RSm-12" value="Chain Adaptation&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="459" y="495" width="123" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="QzRuw6ReyF2sy8QD4RSm-13" value="Resource Control" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="617" y="495" width="123" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="QzRuw6ReyF2sy8QD4RSm-14" value="Submit Result" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="300" y="545" width="123" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="QzRuw6ReyF2sy8QD4RSm-15" value="Task Execution Environment" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="459" y="545" width="123" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="QzRuw6ReyF2sy8QD4RSm-19" value="P2P" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="534" y="622" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="QzRuw6ReyF2sy8QD4RSm-22" value="RPC API" style="rounded=0;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+          <mxGeometry x="250" y="426" width="513" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="QzRuw6ReyF2sy8QD4RSm-23" value="Key Mgt" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="617" y="545" width="123" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="QzRuw6ReyF2sy8QD4RSm-24" value="Key Mgt" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="255" y="327" width="104" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="QzRuw6ReyF2sy8QD4RSm-25" value="Upload Data" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="412" y="327" width="104" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="QzRuw6ReyF2sy8QD4RSm-26" value="PADO&amp;nbsp;&lt;div&gt;Contracts&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="827" y="406" width="176" height="371" as="geometry" />
+        </mxCell>
+        <mxCell id="QzRuw6ReyF2sy8QD4RSm-27" value="Worker Mgt" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="863" y="420" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="QzRuw6ReyF2sy8QD4RSm-28" value="Submit Task" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="570" y="327" width="104" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="QzRuw6ReyF2sy8QD4RSm-29" value="PADO Token" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="863" y="666" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="XuzBIOFZBx4Q-mBygeml-1" value="Hardware" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="243.5" y="694" width="526.5" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="XuzBIOFZBx4Q-mBygeml-2" value="GPU" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="313" y="712" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="XuzBIOFZBx4Q-mBygeml-3" value="FPGA" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="448" y="712" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="XuzBIOFZBx4Q-mBygeml-4" value="AISC" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="590" y="709" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="XuzBIOFZBx4Q-mBygeml-5" value="Storage" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="652" y="622" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="XuzBIOFZBx4Q-mBygeml-11" value="Task Mgt" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="863" y="483" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="XuzBIOFZBx4Q-mBygeml-12" value="Fee Mgt" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="863" y="545" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="XuzBIOFZBx4Q-mBygeml-13" value="Worker Incentive" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="863" y="607" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="XuzBIOFZBx4Q-mBygeml-19" value="Get Result" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="727" y="327" width="104" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="XuzBIOFZBx4Q-mBygeml-20" value="Data Exchange" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="255" y="235" width="104" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="XuzBIOFZBx4Q-mBygeml-21" value="MEV/Order Book DEX" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="422" y="235" width="104" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="XuzBIOFZBx4Q-mBygeml-22" value="Privacy Preserving ML" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="588" y="235" width="104" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="XuzBIOFZBx4Q-mBygeml-23" value="Confidentiality for DePIN" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="755" y="235" width="104" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="XuzBIOFZBx4Q-mBygeml-24" value="Developer Tool" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="884" y="327" width="104" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="aishZJgOiR8-F9n_NxFS-1" value="Filecoin" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="809.5" width="188" height="61" as="geometry" />
+        </mxCell>
+        <mxCell id="aishZJgOiR8-F9n_NxFS-2" value="......" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="749" y="809.5" width="188" height="61" as="geometry" />
+        </mxCell>
+        <mxCell id="aishZJgOiR8-F9n_NxFS-3" value="PADO&lt;div&gt;Scan&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="305" width="107" height="471" as="geometry" />
+        </mxCell>
+        <mxCell id="aishZJgOiR8-F9n_NxFS-4" value="Node Info" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1040.5" y="361" width="86" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="aishZJgOiR8-F9n_NxFS-5" value="Data Info" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1040.5" y="460" width="86" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="aishZJgOiR8-F9n_NxFS-6" value="Task Info" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1039" y="587" width="86" height="35" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="tJuS19yz6y2HFUxBqTIf" name="第 2 页">
+    <mxGraphModel dx="954" dy="727" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="FlkSB3utFS3LM57K9h4x-3" value="&lt;span style=&quot;box-sizing: border-box; --tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; caret-color: rgb(51, 51, 51); color: rgb(51, 51, 51); font-family: &amp;quot;Open Sans&amp;quot;, &amp;quot;Clear Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, &amp;quot;Segoe UI Emoji&amp;quot;, sans-serif; font-size: 16px; orphans: 4; text-align: left; white-space-collapse: preserve; text-size-adjust: auto;&quot;&gt;PADO SDK&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="190" y="30" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="FlkSB3utFS3LM57K9h4x-4" value="" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" edge="1" parent="1" target="FlkSB3utFS3LM57K9h4x-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="245" y="680" as="sourcePoint" />
+            <mxPoint x="250" y="110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FlkSB3utFS3LM57K9h4x-5" value="&lt;div style=&quot;orphans: 4; text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial; font-size: 16px; caret-color: rgb(51, 51, 51); white-space-collapse: preserve;&quot;&gt;&lt;font face=&quot;Open Sans, Clear Sans, Helvetica Neue, Helvetica, Arial, Segoe UI Emoji, sans-serif&quot; color=&quot;#333333&quot;&gt;PADO&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;orphans: 4; text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial; font-size: 16px; caret-color: rgb(51, 51, 51); white-space-collapse: preserve;&quot;&gt;&lt;font face=&quot;Open Sans, Clear Sans, Helvetica Neue, Helvetica, Arial, Segoe UI Emoji, sans-serif&quot; color=&quot;#333333&quot;&gt;Contracts&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="410" y="30" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="FlkSB3utFS3LM57K9h4x-6" value="" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" edge="1" parent="1" target="FlkSB3utFS3LM57K9h4x-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="465" y="680" as="sourcePoint" />
+            <mxPoint x="470" y="110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FlkSB3utFS3LM57K9h4x-7" value="&lt;div style=&quot;orphans: 4; text-align: left;&quot;&gt;&lt;font face=&quot;Open Sans, Clear Sans, Helvetica Neue, Helvetica, Arial, Segoe UI Emoji, sans-serif&quot; color=&quot;#333333&quot;&gt;&lt;span style=&quot;font-size: 16px; caret-color: rgb(51, 51, 51); white-space-collapse: preserve;&quot;&gt;Worker&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="630" y="30" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="FlkSB3utFS3LM57K9h4x-8" value="" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" edge="1" parent="1" target="FlkSB3utFS3LM57K9h4x-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="685" y="680" as="sourcePoint" />
+            <mxPoint x="690" y="110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FlkSB3utFS3LM57K9h4x-9" value="&lt;span style=&quot;box-sizing: border-box; --tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; caret-color: rgb(51, 51, 51); color: rgb(51, 51, 51); font-family: &amp;quot;Open Sans&amp;quot;, &amp;quot;Clear Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, &amp;quot;Segoe UI Emoji&amp;quot;, sans-serif; orphans: 4; text-align: left; white-space: pre-wrap; text-size-adjust: auto;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;Data Provider&lt;/font&gt;&lt;/span&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="109" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FlkSB3utFS3LM57K9h4x-12" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="80" y="149" as="sourcePoint" />
+            <mxPoint x="240" y="149" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FlkSB3utFS3LM57K9h4x-13" value="2. Upload data" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="FlkSB3utFS3LM57K9h4x-12">
+          <mxGeometry x="-0.6625" y="1" relative="1" as="geometry">
+            <mxPoint x="37" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="P9Uad6lCMW3POyhcQmVa-1" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="250" y="176" as="sourcePoint" />
+            <mxPoint x="460" y="176" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="P9Uad6lCMW3POyhcQmVa-2" value="3. Get public key" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="P9Uad6lCMW3POyhcQmVa-1">
+          <mxGeometry x="-0.5429" y="1" relative="1" as="geometry">
+            <mxPoint x="42" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="P9Uad6lCMW3POyhcQmVa-3" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="470" y="266" as="sourcePoint" />
+            <mxPoint x="680" y="266" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="P9Uad6lCMW3POyhcQmVa-5" value="5. Request public key" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="P9Uad6lCMW3POyhcQmVa-3">
+          <mxGeometry x="-0.5143" y="4" relative="1" as="geometry">
+            <mxPoint x="39" y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="P9Uad6lCMW3POyhcQmVa-4" value="4.&amp;nbsp;Node selection" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="470" y="206" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="P9Uad6lCMW3POyhcQmVa-6" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="680" y="306" as="sourcePoint" />
+            <mxPoint x="470" y="306" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="P9Uad6lCMW3POyhcQmVa-7" value="6. Return public key" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="P9Uad6lCMW3POyhcQmVa-6">
+          <mxGeometry x="0.5091" y="-3" relative="1" as="geometry">
+            <mxPoint x="46" y="3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="P9Uad6lCMW3POyhcQmVa-8" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="460" y="306" as="sourcePoint" />
+            <mxPoint x="250" y="306" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="P9Uad6lCMW3POyhcQmVa-9" value="7. Return public key" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="P9Uad6lCMW3POyhcQmVa-8">
+          <mxGeometry x="0.4762" y="1" relative="1" as="geometry">
+            <mxPoint x="35" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="P9Uad6lCMW3POyhcQmVa-10" value="&lt;div style=&quot;orphans: 4;&quot;&gt;&lt;font face=&quot;Open Sans, Clear Sans, Helvetica Neue, Helvetica, Arial, Segoe UI Emoji, sans-serif&quot; color=&quot;#333333&quot;&gt;&lt;span style=&quot;font-size: 16px; caret-color: rgb(51, 51, 51); white-space-collapse: preserve;&quot;&gt;Storage Blockchain&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="840" y="30" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="P9Uad6lCMW3POyhcQmVa-11" value="" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" target="P9Uad6lCMW3POyhcQmVa-10">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="895" y="680" as="sourcePoint" />
+            <mxPoint x="900" y="110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="P9Uad6lCMW3POyhcQmVa-12" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="250" y="346" as="sourcePoint" />
+            <mxPoint x="890" y="346" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="P9Uad6lCMW3POyhcQmVa-13" value="8. Encrypt data and upload" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="P9Uad6lCMW3POyhcQmVa-12">
+          <mxGeometry x="-0.8937" y="3" relative="1" as="geometry">
+            <mxPoint x="66" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="P9Uad6lCMW3POyhcQmVa-14" value="&lt;span style=&quot;box-sizing: border-box; --tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; caret-color: rgb(51, 51, 51); color: rgb(51, 51, 51); font-family: &amp;quot;Open Sans&amp;quot;, &amp;quot;Clear Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, &amp;quot;Segoe UI Emoji&amp;quot;, sans-serif; orphans: 4; text-align: left; white-space: pre-wrap; text-size-adjust: auto;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;Network &lt;/font&gt;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;box-sizing: border-box; --tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; caret-color: rgb(51, 51, 51); color: rgb(51, 51, 51); font-family: &amp;quot;Open Sans&amp;quot;, &amp;quot;Clear Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, &amp;quot;Segoe UI Emoji&amp;quot;, sans-serif; orphans: 4; text-align: left; white-space: pre-wrap; text-size-adjust: auto;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;Consumer&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="370" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Cv5CFSGD8MYYcA3oNhDb-1" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="680" y="109" as="sourcePoint" />
+            <mxPoint x="470" y="109" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Cv5CFSGD8MYYcA3oNhDb-2" value="1. Register Worker Info" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Cv5CFSGD8MYYcA3oNhDb-1">
+          <mxGeometry x="0.4952" y="-1" relative="1" as="geometry">
+            <mxPoint x="47" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Cv5CFSGD8MYYcA3oNhDb-3" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="80" y="400" as="sourcePoint" />
+            <mxPoint x="240" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Cv5CFSGD8MYYcA3oNhDb-4" value="9. Submit Task and pay fee" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Cv5CFSGD8MYYcA3oNhDb-3">
+          <mxGeometry x="-0.675" y="3" relative="1" as="geometry">
+            <mxPoint x="44" y="3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Cv5CFSGD8MYYcA3oNhDb-5" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="250" y="399.5" as="sourcePoint" />
+            <mxPoint x="460" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Cv5CFSGD8MYYcA3oNhDb-6" value="10. Submit Task and pay fee" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Cv5CFSGD8MYYcA3oNhDb-5">
+          <mxGeometry x="-0.675" y="3" relative="1" as="geometry">
+            <mxPoint x="66" y="3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Cv5CFSGD8MYYcA3oNhDb-7" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="680" y="440" as="sourcePoint" />
+            <mxPoint x="470" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Cv5CFSGD8MYYcA3oNhDb-8" value="11. Get task" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Cv5CFSGD8MYYcA3oNhDb-7">
+          <mxGeometry x="0.5143" relative="1" as="geometry">
+            <mxPoint x="29" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Cv5CFSGD8MYYcA3oNhDb-9" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="690" y="480" as="sourcePoint" />
+            <mxPoint x="890" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Cv5CFSGD8MYYcA3oNhDb-11" value="12.&amp;nbsp;Get encrypted data" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Cv5CFSGD8MYYcA3oNhDb-9">
+          <mxGeometry x="-0.44" relative="1" as="geometry">
+            <mxPoint x="34" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Cv5CFSGD8MYYcA3oNhDb-12" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;13. zkFHE computing&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="690" y="510" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Cv5CFSGD8MYYcA3oNhDb-13" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="680" y="611" as="sourcePoint" />
+            <mxPoint x="470" y="611" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Cv5CFSGD8MYYcA3oNhDb-14" value="14. Return encrypted result" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Cv5CFSGD8MYYcA3oNhDb-13">
+          <mxGeometry x="0.4381" y="-1" relative="1" as="geometry">
+            <mxPoint x="41" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Cv5CFSGD8MYYcA3oNhDb-17" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="460" y="641" as="sourcePoint" />
+            <mxPoint x="250" y="641" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Cv5CFSGD8MYYcA3oNhDb-18" value="15. Return encrypted result" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Cv5CFSGD8MYYcA3oNhDb-17">
+          <mxGeometry x="0.4952" y="-1" relative="1" as="geometry">
+            <mxPoint x="47" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Cv5CFSGD8MYYcA3oNhDb-19" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="240" y="641" as="sourcePoint" />
+            <mxPoint x="70" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Cv5CFSGD8MYYcA3oNhDb-20" value="16. decrypt and return plain result" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Cv5CFSGD8MYYcA3oNhDb-19">
+          <mxGeometry x="0.574" y="2" relative="1" as="geometry">
+            <mxPoint x="27" y="20" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="N1afL0UuhTNW_UbQJOtg" name="第 3 页">
+    <mxGraphModel dx="954" dy="727" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="XLyrFhdN-DAKRs86AVOz-1" value="&lt;span style=&quot;box-sizing: border-box; --tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; caret-color: rgb(51, 51, 51); color: rgb(51, 51, 51); font-family: &amp;quot;Open Sans&amp;quot;, &amp;quot;Clear Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, &amp;quot;Segoe UI Emoji&amp;quot;, sans-serif; font-size: 16px; orphans: 4; text-align: left; white-space-collapse: preserve; text-size-adjust: auto;&quot;&gt;PADO SDK&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="190" y="30" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="XLyrFhdN-DAKRs86AVOz-2" value="" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" edge="1" parent="1" target="XLyrFhdN-DAKRs86AVOz-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="245" y="750" as="sourcePoint" />
+            <mxPoint x="250" y="110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XLyrFhdN-DAKRs86AVOz-3" value="&lt;div style=&quot;orphans: 4; text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial; font-size: 16px; caret-color: rgb(51, 51, 51); white-space-collapse: preserve;&quot;&gt;&lt;font face=&quot;Open Sans, Clear Sans, Helvetica Neue, Helvetica, Arial, Segoe UI Emoji, sans-serif&quot; color=&quot;#333333&quot;&gt;PADO&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;orphans: 4; text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial; font-size: 16px; caret-color: rgb(51, 51, 51); white-space-collapse: preserve;&quot;&gt;&lt;font face=&quot;Open Sans, Clear Sans, Helvetica Neue, Helvetica, Arial, Segoe UI Emoji, sans-serif&quot; color=&quot;#333333&quot;&gt;Contracts&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="410" y="30" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="XLyrFhdN-DAKRs86AVOz-4" value="" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" edge="1" parent="1" target="XLyrFhdN-DAKRs86AVOz-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="465" y="750" as="sourcePoint" />
+            <mxPoint x="470" y="110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XLyrFhdN-DAKRs86AVOz-5" value="&lt;div style=&quot;orphans: 4; text-align: left;&quot;&gt;&lt;font face=&quot;Open Sans, Clear Sans, Helvetica Neue, Helvetica, Arial, Segoe UI Emoji, sans-serif&quot; color=&quot;#333333&quot;&gt;&lt;span style=&quot;font-size: 16px; caret-color: rgb(51, 51, 51); white-space-collapse: preserve;&quot;&gt;Worker&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="630" y="30" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="XLyrFhdN-DAKRs86AVOz-6" value="" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" edge="1" parent="1" target="XLyrFhdN-DAKRs86AVOz-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="690" y="750" as="sourcePoint" />
+            <mxPoint x="690" y="110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XLyrFhdN-DAKRs86AVOz-7" value="&lt;span style=&quot;box-sizing: border-box; --tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; caret-color: rgb(51, 51, 51); color: rgb(51, 51, 51); font-family: &amp;quot;Open Sans&amp;quot;, &amp;quot;Clear Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, &amp;quot;Segoe UI Emoji&amp;quot;, sans-serif; orphans: 4; text-align: left; white-space: pre-wrap; text-size-adjust: auto;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;Data Provider&lt;/font&gt;&lt;/span&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="287" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XLyrFhdN-DAKRs86AVOz-8" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="79" y="311" as="sourcePoint" />
+            <mxPoint x="239" y="311" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XLyrFhdN-DAKRs86AVOz-9" value="7. Upload data" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="XLyrFhdN-DAKRs86AVOz-8">
+          <mxGeometry x="-0.6625" y="1" relative="1" as="geometry">
+            <mxPoint x="37" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XLyrFhdN-DAKRs86AVOz-10" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="249" y="347" as="sourcePoint" />
+            <mxPoint x="459" y="347" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XLyrFhdN-DAKRs86AVOz-11" value="8. Get&amp;nbsp;&lt;span style=&quot;caret-color: rgb(51, 51, 51); font-family: &amp;quot;Open Sans&amp;quot;, &amp;quot;Clear Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, &amp;quot;Segoe UI Emoji&amp;quot;, sans-serif; orphans: 4; text-align: start; white-space: pre-wrap; text-size-adjust: auto;&quot;&gt;D&lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;Open Sans&amp;quot;, &amp;quot;Clear Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, &amp;quot;Segoe UI Emoji&amp;quot;, sans-serif; orphans: 4; text-align: start; caret-color: rgb(51, 51, 51); white-space: pre-wrap;&quot;&gt;ata E&lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;Open Sans&amp;quot;, &amp;quot;Clear Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, &amp;quot;Segoe UI Emoji&amp;quot;, sans-serif; orphans: 4; text-align: start; caret-color: rgb(51, 51, 51); white-space: pre-wrap;&quot;&gt;ncryption P&lt;/span&gt;ublic Key" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="XLyrFhdN-DAKRs86AVOz-10">
+          <mxGeometry x="-0.5429" y="1" relative="1" as="geometry">
+            <mxPoint x="42" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XLyrFhdN-DAKRs86AVOz-12" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="469" y="224" as="sourcePoint" />
+            <mxPoint x="679" y="224" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XLyrFhdN-DAKRs86AVOz-13" value="5. Request&lt;font style=&quot;font-size: 11px;&quot;&gt;&lt;span style=&quot;caret-color: rgb(51, 51, 51); font-family: &amp;quot;Open Sans&amp;quot;, &amp;quot;Clear Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, &amp;quot;Segoe UI Emoji&amp;quot;, sans-serif; orphans: 4; text-align: start; white-space: pre-wrap; text-size-adjust: auto;&quot;&gt; D&lt;/span&gt;&lt;/font&gt;&lt;span style=&quot;font-family: &amp;quot;Open Sans&amp;quot;, &amp;quot;Clear Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, &amp;quot;Segoe UI Emoji&amp;quot;, sans-serif; orphans: 4; text-align: start; caret-color: rgb(51, 51, 51); white-space: pre-wrap;&quot;&gt;ata E&lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;Open Sans&amp;quot;, &amp;quot;Clear Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, &amp;quot;Segoe UI Emoji&amp;quot;, sans-serif; orphans: 4; text-align: start; caret-color: rgb(51, 51, 51); white-space: pre-wrap;&quot;&gt;ncryption P&lt;/span&gt;ublic Key" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="XLyrFhdN-DAKRs86AVOz-12">
+          <mxGeometry x="-0.5143" y="4" relative="1" as="geometry">
+            <mxPoint x="40" y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XLyrFhdN-DAKRs86AVOz-14" value="4.&amp;nbsp;Worker selection" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="469" y="160" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XLyrFhdN-DAKRs86AVOz-15" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="679" y="284" as="sourcePoint" />
+            <mxPoint x="469" y="284" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XLyrFhdN-DAKRs86AVOz-16" value="6. Return&amp;nbsp;&lt;span style=&quot;caret-color: rgb(51, 51, 51); font-family: &amp;quot;Open Sans&amp;quot;, &amp;quot;Clear Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, &amp;quot;Segoe UI Emoji&amp;quot;, sans-serif; orphans: 4; text-align: start; white-space: pre-wrap; text-size-adjust: auto;&quot;&gt;D&lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;Open Sans&amp;quot;, &amp;quot;Clear Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, &amp;quot;Segoe UI Emoji&amp;quot;, sans-serif; orphans: 4; text-align: start; caret-color: rgb(51, 51, 51); white-space: pre-wrap;&quot;&gt;ata E&lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;Open Sans&amp;quot;, &amp;quot;Clear Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, &amp;quot;Segoe UI Emoji&amp;quot;, sans-serif; orphans: 4; text-align: start; caret-color: rgb(51, 51, 51); white-space: pre-wrap;&quot;&gt;ncryption P&lt;/span&gt;ublic Key" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="XLyrFhdN-DAKRs86AVOz-15">
+          <mxGeometry x="0.5091" y="-3" relative="1" as="geometry">
+            <mxPoint x="46" y="3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XLyrFhdN-DAKRs86AVOz-19" value="&lt;div style=&quot;orphans: 4;&quot;&gt;&lt;font face=&quot;Open Sans, Clear Sans, Helvetica Neue, Helvetica, Arial, Segoe UI Emoji, sans-serif&quot; color=&quot;#333333&quot;&gt;&lt;span style=&quot;font-size: 16px; caret-color: rgb(51, 51, 51); white-space-collapse: preserve;&quot;&gt;Storage Blockchain&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="840" y="30" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="XLyrFhdN-DAKRs86AVOz-20" value="" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" target="XLyrFhdN-DAKRs86AVOz-19">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="895" y="750" as="sourcePoint" />
+            <mxPoint x="900" y="110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XLyrFhdN-DAKRs86AVOz-21" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="249" y="384" as="sourcePoint" />
+            <mxPoint x="889" y="384" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XLyrFhdN-DAKRs86AVOz-22" value="9. Encrypt data and upload" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="XLyrFhdN-DAKRs86AVOz-21">
+          <mxGeometry x="-0.8937" y="3" relative="1" as="geometry">
+            <mxPoint x="66" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XLyrFhdN-DAKRs86AVOz-23" value="&lt;span style=&quot;box-sizing: border-box; --tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; caret-color: rgb(51, 51, 51); color: rgb(51, 51, 51); font-family: &amp;quot;Open Sans&amp;quot;, &amp;quot;Clear Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, &amp;quot;Segoe UI Emoji&amp;quot;, sans-serif; orphans: 4; text-align: left; white-space: pre-wrap; text-size-adjust: auto;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;Network &lt;/font&gt;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;box-sizing: border-box; --tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; caret-color: rgb(51, 51, 51); color: rgb(51, 51, 51); font-family: &amp;quot;Open Sans&amp;quot;, &amp;quot;Clear Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, &amp;quot;Segoe UI Emoji&amp;quot;, sans-serif; orphans: 4; text-align: left; white-space: pre-wrap; text-size-adjust: auto;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;Consumer&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="110" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XLyrFhdN-DAKRs86AVOz-24" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="680" y="109" as="sourcePoint" />
+            <mxPoint x="470" y="109" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XLyrFhdN-DAKRs86AVOz-25" value="1. Register Worker Info" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="XLyrFhdN-DAKRs86AVOz-24">
+          <mxGeometry x="0.4952" y="-1" relative="1" as="geometry">
+            <mxPoint x="47" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XLyrFhdN-DAKRs86AVOz-26" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="80" y="140" as="sourcePoint" />
+            <mxPoint x="240" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XLyrFhdN-DAKRs86AVOz-27" value="2. Submit task with&amp;nbsp;&lt;div&gt;&lt;span style=&quot;background-color: rgb(251, 251, 251); box-sizing: border-box; --tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; caret-color: rgb(51, 51, 51); font-family: &amp;quot;Open Sans&amp;quot;, &amp;quot;Clear Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, &amp;quot;Segoe UI Emoji&amp;quot;, sans-serif; orphans: 4; text-align: left; white-space: pre-wrap; text-size-adjust: auto;&quot;&gt;Network &lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;Open Sans&amp;quot;, &amp;quot;Clear Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, &amp;quot;Segoe UI Emoji&amp;quot;, sans-serif; orphans: 4; text-align: left; caret-color: rgb(51, 51, 51); white-space: pre-wrap; background-color: rgb(251, 251, 251);&quot;&gt;Consumer &lt;/span&gt;PK and pay fee&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="XLyrFhdN-DAKRs86AVOz-26">
+          <mxGeometry x="-0.675" y="3" relative="1" as="geometry">
+            <mxPoint x="54" y="3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XLyrFhdN-DAKRs86AVOz-28" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="250" y="139.5" as="sourcePoint" />
+            <mxPoint x="460" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XLyrFhdN-DAKRs86AVOz-29" value="3. Submit task with&amp;nbsp;&lt;div&gt;&lt;span style=&quot;background-color: rgb(251, 251, 251); box-sizing: border-box; --tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; caret-color: rgb(51, 51, 51); font-family: &amp;quot;Open Sans&amp;quot;, &amp;quot;Clear Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, &amp;quot;Segoe UI Emoji&amp;quot;, sans-serif; orphans: 4; text-align: left; white-space: pre-wrap; text-size-adjust: auto;&quot;&gt;Network &lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;Open Sans&amp;quot;, &amp;quot;Clear Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, &amp;quot;Segoe UI Emoji&amp;quot;, sans-serif; orphans: 4; text-align: left; caret-color: rgb(51, 51, 51); white-space: pre-wrap; background-color: rgb(251, 251, 251);&quot;&gt;Consumer &lt;/span&gt;PK and pay fee&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="XLyrFhdN-DAKRs86AVOz-28">
+          <mxGeometry x="-0.675" y="3" relative="1" as="geometry">
+            <mxPoint x="66" y="3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XLyrFhdN-DAKRs86AVOz-30" value="x" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="679" y="420" as="sourcePoint" />
+            <mxPoint x="469" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XLyrFhdN-DAKRs86AVOz-31" value="10. Get task" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="XLyrFhdN-DAKRs86AVOz-30">
+          <mxGeometry x="0.5143" relative="1" as="geometry">
+            <mxPoint x="29" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XLyrFhdN-DAKRs86AVOz-32" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="689" y="450" as="sourcePoint" />
+            <mxPoint x="889" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XLyrFhdN-DAKRs86AVOz-33" value="11.&amp;nbsp;Get encrypted data" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="XLyrFhdN-DAKRs86AVOz-32">
+          <mxGeometry x="-0.44" relative="1" as="geometry">
+            <mxPoint x="34" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XLyrFhdN-DAKRs86AVOz-34" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;12. zkFHE computing&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="690" y="480" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XLyrFhdN-DAKRs86AVOz-35" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="679" y="584" as="sourcePoint" />
+            <mxPoint x="469" y="584" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XLyrFhdN-DAKRs86AVOz-36" value="14. Return encrypted result&amp;nbsp;&lt;div&gt;and zk proof&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="XLyrFhdN-DAKRs86AVOz-35">
+          <mxGeometry x="0.4381" y="-1" relative="1" as="geometry">
+            <mxPoint x="41" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XLyrFhdN-DAKRs86AVOz-37" value="x" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="460" y="660" as="sourcePoint" />
+            <mxPoint x="250" y="660" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XLyrFhdN-DAKRs86AVOz-38" value="16. Return encrypted result" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="XLyrFhdN-DAKRs86AVOz-37">
+          <mxGeometry x="0.4952" y="-1" relative="1" as="geometry">
+            <mxPoint x="47" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XLyrFhdN-DAKRs86AVOz-39" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="240" y="691" as="sourcePoint" />
+            <mxPoint x="80" y="690" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XLyrFhdN-DAKRs86AVOz-40" value="17. decrypt and&amp;nbsp;&lt;div&gt;return plain result&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="XLyrFhdN-DAKRs86AVOz-39">
+          <mxGeometry x="0.574" y="2" relative="1" as="geometry">
+            <mxPoint x="38" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UXf9GQhPQGTKbypZw6gw-2" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;13. Selection Workers re-encrypt result with Network Consumer PK&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="690" y="530" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="UXf9GQhPQGTKbypZw6gw-3" value="15. Verify proof and&amp;nbsp;fee settlement" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="469" y="610" width="101" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="UXf9GQhPQGTKbypZw6gw-4" value="&lt;span style=&quot;box-sizing: border-box; --tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; caret-color: rgb(51, 51, 51); color: rgb(51, 51, 51); font-family: &amp;quot;Open Sans&amp;quot;, &amp;quot;Clear Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, &amp;quot;Segoe UI Emoji&amp;quot;, sans-serif; orphans: 4; text-align: left; white-space: pre-wrap; text-size-adjust: auto;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;Network &lt;/font&gt;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;box-sizing: border-box; --tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; caret-color: rgb(51, 51, 51); color: rgb(51, 51, 51); font-family: &amp;quot;Open Sans&amp;quot;, &amp;quot;Clear Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, &amp;quot;Segoe UI Emoji&amp;quot;, sans-serif; orphans: 4; text-align: left; white-space: pre-wrap; text-size-adjust: auto;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;Consumer&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="650" width="30" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
