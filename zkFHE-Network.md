@@ -82,7 +82,7 @@ Worker is a node of PADO Network, providing computing resources。Worker consist
 
 #### PADO Contracts
 
-PADO Contracts is a collection of blockchain contracts that can be deployed on multiple blockchains。You can refer to [the detailed contract design](https://github.com/pado-labs/zkFHE-Network-Docs/PADO-Contracts.md). PADO Contracts consists of the following parts:
+PADO Contracts is a collection of blockchain contracts that can be deployed on multiple blockchains。You can refer to [the detailed contract design](https://github.com/pado-labs/zkFHE-Network-Docs/blob/main/PADO-Contracts.md). PADO Contracts consists of the following parts:
 
 * **Worker Management**: Worker registration and staking, updating Worker information, obtaining Worker information, and Worker exiting PADO Network.
 * **Task Management:** Receive confidential computing tasks submitted by SDK, receive zkFHE computing results submitted by Worker and verify the results, and obtain pending tasks and completed tasks.
