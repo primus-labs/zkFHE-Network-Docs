@@ -29,10 +29,6 @@ The core advantages of zkFHE lie in its natural abilities from both zero-knowled
 
   Network Consumer is an individual or organization that uses PADO Network computing and data resources. Network Consumer can specify the encrypted data uploaded by the Data Provider to initiate a confidential computing task and obtain the results of the confidential computing task. Network Consumers are required to pay computing and data fees.
 
-* **Token Holder**
-
-  Token Holders are individuals and organizations that hold PADO Token. Token Holder can participate in community governance, including network protocol upgrades, network protocol parameter modifications, community fund use, etc.
-
 ## Architecture
 
 Comprehensive consideration of multiple perspectives of decentralization, security and scalability, PADO Network is designed to separate consensus and computation. Workers mainly use the zkFHE algorithm to run confidential computation and generate proofs of computation. The correctness and integrity of computation is verified through PADO Contracts using blockchain consensus. At the same time, Worker management, data management, task management, fee management, and Worker incentives included in PADO Contracts all use the consensus of the blockchain.
@@ -88,7 +84,6 @@ PADO Contracts is a collection of blockchain contracts that can be deployed on m
 * **Task Management:** Receive confidential computing tasks submitted by SDK, receive zkFHE computing results submitted by Worker and verify the results, and obtain pending tasks and completed tasks.
 * **Fee Management:** Settle the Network Consumer's fee to the Data Provider and Worker.
 * **Worker Incentive:** Responsible for the calculation of reward and penalty funds, providing rewards to honest and stable Workers and penalties to dishonest and unstable Workers.
-* **Native Token:** A Token contract on the blockchain. Incentivize network participants to provide computation powers for running verifiable confidential computations, to supply input data for application demands, to offer technical and security contributions for the whole ecosystem. For more information, please refer to [Economics](#economics).
 
 #### PADO SDK
 
@@ -120,7 +115,7 @@ The core workflow is shown in the figure below:
 
 #### Register Worker
 
-After the Worker is started, it must be registered to the Worker Management of PADO Contracts and stake a certain number of PADO Token. Confidential computing tasks will only be dispatched to successfully registered Workers. The registered information includes name, description, owner address, machine resources, RPC address and port, Worker public key, etc.
+After the Worker is started, it must be registered to the Worker Management of PADO Contracts. Confidential computing tasks will only be dispatched to successfully registered Workers. The registered information includes name, description, owner address, machine resources, RPC address and port, Worker public key, etc.
 
 #### Submit Task and Get Data Encryption Public Key
 
@@ -155,39 +150,29 @@ The functionality of blockchain-like systems is based on a combination of crypto
 
 PADO network operates as a chain-agnostic open computation layer. PADO achieves confidentiality and integrity for each computation task and input provider(s) with zkFHE and related cryptographic techniques.   
 
-Still under development, PADO will achieve resilience and adaptive security by using a token, the PADO token (F0), to incentivize network participants to provide computation powers for running verifiable confidential computations, to supply input data for application demands, to offer  technical and security contributions for the whole ecosystem.
-
-### The purpose of F0 token
-
-F0 serves as the mechanism for covering network operation fees, ensuring network maintenance and security through staking for achieving consensus, and determining PADO network’s values and technology objectives through voting on governance proposals.
-
 ### Computation Fees
 
-To utilize the zkFHE computation network, computation fees were paid by network consumers with stable coins like USDT/USDC, while also support the payment of F0 with a discounted tariff. Note if a computation task involves any data inputs supplied by the data providers, the additional fees shall be added and shared by the providers according to the allocation plan specified in the task. 
+To utilize the zkFHE computation network, computation fees were paid by network consumers with coins like USDT/USDC, etc. Note if a computation task involves any data inputs supplied by the data providers, the additional fees shall be added and shared by the providers according to the allocation plan specified in the task.
 
-### Staking and Incentives
+### Incentives
 
-Every participant within the network has the opportunity to stake F0 tokens, contributing to the network stability and earning rewards in return. For a worker operated by a computing power provider, he shall stake with enough F0s to be eligible for participating in the computations. It shall be clarified that in every single task, the computation fee paid by the network consumer will be legitimately distributed between the involved workers and F0 holders.
-
-The network incentives for F0 are primarily designed to benefit computing power providers, network security, and the developer community. Beyond the computation fee for the workers and related participants with staked F0s, PADO network shall incentivize the network contributors with F0 tokens periodically to maintain the network liveness and security.
+The network incentives are primarily designed to benefit computing power providers, network security, and the developer community. Beyond the computation fee for the workers and related participants, PADO network shall incentivize the network contributors to maintain the network liveness and security.
 
 ### Penalties
 
-To deter negative or malicious behavior within the network, the tokens will also be utilized as a punitive measure. Actions or situations that will trigger penalties include:
+Actions or situations that will trigger penalties include:
 
 - Inactive worker: Any worker that has been registered normally but was detected in an abnormal state will incur a minor penalty to compensate for the network operation cost.
-- Computation failure: Workers unable to derive a valid computation result like decryption failure and proof rejection will be fined with a certain portion of staked F0s. The collected fined tokens will be further burned according to the network rules and governance.
-- Privacy breach: Attempts to decrypt any ciphertexts except the agreed upon output of a requested computation are punishable. If the worker or other network participants was reported to such a criminal, he shall be fined with a a certain portion of staked F0s with an additional shashing about worker eligibility. The fined tokens will be further burned and rewarded to the informant.
+- Computation failure: Workers unable to derive a valid computation result like decryption failure and proof rejection will be punished.
+- Privacy breach: Attempts to decrypt any ciphertexts except the agreed upon output of a requested computation are punishable.
 
 ### Governance
 
-Holders of F0 possess the authority to actively engage in network governance, thereby shaping the trajectory and growth of the network. This involvement encompasses the initiation of proposals, voting procedures, and the refinement of core network parameters. Specifically, these governance responsibilities involve but are not limited to the following:
+These governance responsibilities involve but are not limited to the following:
 
-- The minimum deposit of a worker.
 - The waiting period after the worker registers.
 - The waiting period after the worker resigns.
 - penalties
-- burn ratio of F0
 - …
 
 ## Use Case

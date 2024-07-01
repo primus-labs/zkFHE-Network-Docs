@@ -353,8 +353,6 @@ interface IFeeMgt {
 
 ## Worker Incentive Contract
 
-## Native Token Contract
-
 ## Multi-chain design
 
 ## Gas consumption
