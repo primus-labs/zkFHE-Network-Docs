@@ -279,6 +279,35 @@ interface IWorkerMgt {
      * @return Returns all workers.
      */
     function getWorkers() external view returns (Worker[] memory);
+
+    /**
+     * @notice User delegate some token to a worker.
+     * @param workerId The worker id to delegate.
+     * @param delegateAmount The delegate amount.
+     * @return Returns true if the delegating is successful.
+     */
+    function delegate(bytes32 workerId, uint256 delegateAmount) external payable returns (bool);
+
+    /**
+     * @notice User cancel delegating to a worker.
+     * @param workerId The worker id to cancel delegating.
+     * @return Returns true if the canceling is successful.
+     */
+    function unDelegate(bytes32 workerId) external returns (bool);
+
+    /**
+     * @notice Get Workers by delegator address.
+     * @param delegator The delegator address.
+     * @return Returns all workers id of the user delegating.
+     */
+    function getWorkersByDelegator(address delegator) external view returns (bytes32[] memory);
+
+    /**
+     * @notice Get delegators by worker id.
+     * @param workerId The worker id.
+     * @return Returns all delegators address of the worker having.
+     */
+    function getDelegatorsByWorker(bytes32 workerId) external view returns (address[] memory);
 }
 ```
 
