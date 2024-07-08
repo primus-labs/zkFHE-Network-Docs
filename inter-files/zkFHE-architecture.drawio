@@ -1,4 +1,4 @@
-<mxfile host="Electron" modified="2024-07-08T07:33:31.167Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.0.4 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="OlFRv8742q68VxQXf5aZ" version="24.0.4" type="device" pages="5">
+<mxfile host="Electron" modified="2024-07-08T10:42:24.862Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.0.4 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="GdV1QtUhsTspfXormRgY" version="24.0.4" type="device" pages="5">
   <diagram name="第 1 页" id="-4aMPErC7N8ZvygQ49Cx">
     <mxGraphModel dx="954" dy="727" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -721,10 +721,10 @@
             <mxPoint x="480" y="105" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="BeIMS3_ks_ls4n9n-AsX-5" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="MJ-kFtxlvFbNqltSHaVx-1">
+        <mxCell id="BeIMS3_ks_ls4n9n-AsX-5" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="115" y="269" as="sourcePoint" />
-            <mxPoint x="245" y="160" as="targetPoint" />
+            <mxPoint x="80" y="138" as="sourcePoint" />
+            <mxPoint x="710" y="138" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="BeIMS3_ks_ls4n9n-AsX-6" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); line-height: 18px; white-space-collapse: preserve;&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="BeIMS3_ks_ls4n9n-AsX-5">
@@ -732,7 +732,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="FXFB5vdO6RNQxD2LXrY8-1" value="1. register operator to avs" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="BeIMS3_ks_ls4n9n-AsX-5">
+        <mxCell id="FXFB5vdO6RNQxD2LXrY8-1" value="1. register operator of eigen layer" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="BeIMS3_ks_ls4n9n-AsX-5">
           <mxGeometry x="-0.64" y="1" relative="1" as="geometry">
             <mxPoint x="38" as="offset" />
           </mxGeometry>
@@ -785,13 +785,13 @@
         </mxCell>
         <mxCell id="jyDhBOH0hAnrxdlBb2eW-9" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="250" y="208" as="sourcePoint" />
-            <mxPoint x="710" y="208" as="targetPoint" />
+            <mxPoint x="90" y="190" as="sourcePoint" />
+            <mxPoint x="250" y="190" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="jyDhBOH0hAnrxdlBb2eW-10" value="2. register operator of eigen layer" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="jyDhBOH0hAnrxdlBb2eW-9">
-          <mxGeometry x="-0.687" y="3" relative="1" as="geometry">
-            <mxPoint x="48" y="1" as="offset" />
+        <mxCell id="jyDhBOH0hAnrxdlBb2eW-12" value="2. register operator to avs" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="jyDhBOH0hAnrxdlBb2eW-9">
+          <mxGeometry x="-0.4125" y="3" relative="1" as="geometry">
+            <mxPoint x="33" y="3" as="offset" />
           </mxGeometry>
         </mxCell>
       </root>
