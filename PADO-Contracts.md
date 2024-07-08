@@ -382,6 +382,123 @@ interface IFeeMgt {
 
 ## Worker Incentive Contract
 
+Responsible for the calculation of reward and penalty funds, providing rewards to honest and stable Workers and penalties to dishonest and unstable Workers.
+
+The following are the main interfaces:
+
+```solidity
+// SPDX-License-Identifier: MIT
+
+pragma solidity ^0.8.20;
+
+/**
+ * @title IWorkerIncentive
+ * @notice WorkerIncentive - Worker Incentive interface.
+ */
+interface IWorkerIncentive {
+    /**
+     * @notice Incentive workers and their delegators.
+     * @return Returns true if the incentive is successful.
+     */
+    function incentive() external returns (bool);
+
+    /**
+     * @notice Incentive workers and their delegators.
+     * @return Returns true if the incentive is successful.
+     */
+    function userWithdraw() external returns (bool);
+
+    /**
+     * @notice Get a user incentive reward balance.
+     * @param userAddress The user address.
+     * @return Returns the user incentive reward balance.
+     */
+    function userRewardBalance(address userAddress) external view returns (uint256);
+}
+```
+
+## EigenLayer integration
+
+To integrate EigenLayer, an EigenServiceManager contract that inherits the IServiceManager interface of EigenLayer will be implemented.
+
+### Register operator to avs
+
+![](./images/contracts-register-operator.png)
+
+### Create avs rewards submission
+
+### EigenServiceManager contract
+
+The following are the main interfaces:
+
+```solidity
+/**
+     * @notice Creates a new rewards submission to the EigenLayer RewardsCoordinator contract, to be split amongst the
+     * set of stakers delegated to operators who are registered to this `avs`
+     * @param rewardsSubmissions The rewards submissions being created
+     * @dev Only callabe by the permissioned rewardsInitiator address
+     * @dev The duration of the `rewardsSubmission` cannot exceed `MAX_REWARDS_DURATION`
+     * @dev The tokens are sent to the `RewardsCoordinator` contract
+     * @dev Strategies must be in ascending order of addresses to check for duplicates
+     * @dev This function will revert if the `rewardsSubmission` is malformed,
+     * e.g. if the `strategies` and `weights` arrays are of non-equal lengths
+     */
+    function createAVSRewardsSubmission(IRewardsCoordinator.RewardsSubmission[] calldata rewardsSubmissions) external;
+
+    // EVENTS
+    event RewardsInitiatorUpdated(address prevRewardsInitiator, address newRewardsInitiator);
+    
+/**
+     * Metadata should follow the format outlined by this example.
+        {
+            "name": "EigenLabs AVS 1",
+            "website": "https://www.eigenlayer.xyz/",
+            "description": "This is my 1st AVS",
+            "logo": "https://holesky-operator-metadata.s3.amazonaws.com/eigenlayer.png",
+            "twitter": "https://twitter.com/eigenlayer"
+        }
+     * @notice Updates the metadata URI for the AVS
+     * @param _metadataURI is the metadata URI for the AVS
+     */
+    function updateAVSMetadataURI(string memory _metadataURI) external;
+
+    /**
+     * @notice Forwards a call to EigenLayer's DelegationManager contract to confirm operator registration with the AVS
+     * @param operator The address of the operator to register.
+     * @param operatorSignature The signature, salt, and expiry of the operator's signature.
+     */
+    function registerOperatorToAVS(
+        address operator,
+        ISignatureUtils.SignatureWithSaltAndExpiry memory operatorSignature
+    ) external;
+
+    /**
+     * @notice Forwards a call to EigenLayer's DelegationManager contract to confirm operator deregistration from the AVS
+     * @param operator The address of the operator to deregister.
+     */
+    function deregisterOperatorFromAVS(address operator) external;
+
+    /**
+     * @notice Returns the list of strategies that the operator has potentially restaked on the AVS
+     * @param operator The address of the operator to get restaked strategies for
+     * @dev This function is intended to be called off-chain
+     * @dev No guarantee is made on whether the operator has shares for a strategy in a quorum or uniqueness 
+     *      of each element in the returned array. The off-chain service should do that validation separately
+     */
+    function getOperatorRestakedStrategies(address operator) external view returns (address[] memory);
+
+    /**
+     * @notice Returns the list of strategies that the AVS supports for restaking
+     * @dev This function is intended to be called off-chain
+     * @dev No guarantee is made on uniqueness of each element in the returned array. 
+     *      The off-chain service should do that validation separately
+     */
+    function getRestakeableStrategies() external view returns (address[] memory);
+
+    /// @notice Returns the EigenLayer AVSDirectory contract.
+    function avsDirectory() external view returns (address);
+```
+
 ## Multi-chain design
 
 ## Gas consumption

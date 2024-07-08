@@ -1,4 +1,4 @@
-<mxfile host="Electron" modified="2024-07-04T07:47:18.709Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.0.4 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="LZtdiGXILv0tX0gprBpR" version="24.0.4" type="device" pages="4">
+<mxfile host="Electron" modified="2024-07-08T07:33:31.167Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.0.4 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="OlFRv8742q68VxQXf5aZ" version="24.0.4" type="device" pages="5">
   <diagram name="第 1 页" id="-4aMPErC7N8ZvygQ49Cx">
     <mxGraphModel dx="954" dy="727" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -697,6 +697,102 @@
         </mxCell>
         <mxCell id="AdSwjrEX_DZzgB1dN11K-40" value="11. Verify proof and&amp;nbsp;fee settlement" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" vertex="1" parent="1">
           <mxGeometry x="469" y="480" width="101" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="M0xYxos9_aVSBRcnkIJH" name="第 5 页">
+    <mxGraphModel dx="954" dy="727" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="MJ-kFtxlvFbNqltSHaVx-1" value="Eigen Operator" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="120" width="40" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="BeIMS3_ks_ls4n9n-AsX-1" value="" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="250" y="410" as="sourcePoint" />
+            <mxPoint x="250" y="105" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BeIMS3_ks_ls4n9n-AsX-4" value="" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="480" y="410" as="sourcePoint" />
+            <mxPoint x="480" y="105" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BeIMS3_ks_ls4n9n-AsX-5" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="MJ-kFtxlvFbNqltSHaVx-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="115" y="269" as="sourcePoint" />
+            <mxPoint x="245" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BeIMS3_ks_ls4n9n-AsX-6" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); line-height: 18px; white-space-collapse: preserve;&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="BeIMS3_ks_ls4n9n-AsX-5">
+          <mxGeometry x="-0.6533" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FXFB5vdO6RNQxD2LXrY8-1" value="1. register operator to avs" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="BeIMS3_ks_ls4n9n-AsX-5">
+          <mxGeometry x="-0.64" y="1" relative="1" as="geometry">
+            <mxPoint x="38" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TYVIx2ayI74gEPrpaPRD-2" value="" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="920" y="410" as="sourcePoint" />
+            <mxPoint x="920" y="105" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iD9JF5rJ5ZVVAxeE9R22-1" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Eigen ServiceManager&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="190" y="45" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jyDhBOH0hAnrxdlBb2eW-1" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Worker Mgt&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="414" y="45" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jyDhBOH0hAnrxdlBb2eW-2" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;AVS Directory&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="860" y="45" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jyDhBOH0hAnrxdlBb2eW-3" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="250" y="280" as="sourcePoint" />
+            <mxPoint x="480" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jyDhBOH0hAnrxdlBb2eW-4" value="3. register avs worker" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="jyDhBOH0hAnrxdlBb2eW-3">
+          <mxGeometry x="-0.687" y="3" relative="1" as="geometry">
+            <mxPoint x="74" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jyDhBOH0hAnrxdlBb2eW-5" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="250" y="365" as="sourcePoint" />
+            <mxPoint x="920" y="365" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jyDhBOH0hAnrxdlBb2eW-6" value="4. register operator to avs" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="jyDhBOH0hAnrxdlBb2eW-5">
+          <mxGeometry x="-0.687" y="3" relative="1" as="geometry">
+            <mxPoint x="15" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jyDhBOH0hAnrxdlBb2eW-7" value="" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="710" y="410" as="sourcePoint" />
+            <mxPoint x="710" y="105" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jyDhBOH0hAnrxdlBb2eW-8" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Delegation&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;Manager&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="45" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jyDhBOH0hAnrxdlBb2eW-9" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="250" y="208" as="sourcePoint" />
+            <mxPoint x="710" y="208" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jyDhBOH0hAnrxdlBb2eW-10" value="2. register operator of eigen layer" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="jyDhBOH0hAnrxdlBb2eW-9">
+          <mxGeometry x="-0.687" y="3" relative="1" as="geometry">
+            <mxPoint x="48" y="1" as="offset" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
