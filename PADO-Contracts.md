@@ -427,6 +427,8 @@ To integrate EigenLayer, an EigenServiceManager contract that inherits the IServ
 
 ### Create avs rewards submission
 
+![](/Users/fksyuan/work/code/pado-labs/zkFHE-Network-Docs/images/contracts-avs-reward.png)
+
 ### EigenServiceManager contract
 
 The following are the main interfaces:
