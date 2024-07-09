@@ -1,12 +1,9 @@
-<mxfile host="Electron" modified="2024-07-09T01:34:41.262Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.0.4 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="N_kj_PsXDi8nQd5USw85" version="24.0.4" type="device" pages="6">
+<mxfile host="Electron" modified="2024-07-09T09:30:44.176Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.0.4 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="MCy8YxAfFz4Z-2ie8v-k" version="24.0.4" type="device" pages="6">
   <diagram name="第 1 页" id="-4aMPErC7N8ZvygQ49Cx">
     <mxGraphModel dx="954" dy="727" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="XuzBIOFZBx4Q-mBygeml-16" value="Storage&lt;div&gt;Blockchain&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-          <mxGeometry x="177" y="794" width="826" height="92" as="geometry" />
-        </mxCell>
         <mxCell id="QzRuw6ReyF2sy8QD4RSm-1" value="Worker" style="rounded=0;whiteSpace=wrap;html=1;align=left;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="177" y="406" width="633" height="374" as="geometry" />
         </mxCell>
@@ -18,9 +15,6 @@
         </mxCell>
         <mxCell id="QzRuw6ReyF2sy8QD4RSm-5" value="Apps" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="178.5" y="217" width="819.5" height="76" as="geometry" />
-        </mxCell>
-        <mxCell id="QzRuw6ReyF2sy8QD4RSm-6" value="Arweave" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="263" y="809.5" width="188" height="61" as="geometry" />
         </mxCell>
         <mxCell id="QzRuw6ReyF2sy8QD4RSm-8" value="FHE" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="300" y="622" width="100" height="40" as="geometry" />
@@ -115,12 +109,6 @@
         <mxCell id="XuzBIOFZBx4Q-mBygeml-24" value="Developer Tool" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="884" y="327" width="104" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="aishZJgOiR8-F9n_NxFS-1" value="Filecoin" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="510" y="809.5" width="188" height="61" as="geometry" />
-        </mxCell>
-        <mxCell id="aishZJgOiR8-F9n_NxFS-2" value="......" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="749" y="809.5" width="188" height="61" as="geometry" />
-        </mxCell>
         <mxCell id="aishZJgOiR8-F9n_NxFS-3" value="PADO&lt;div&gt;Scan&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;" parent="1" vertex="1">
           <mxGeometry x="1030" y="305" width="107" height="471" as="geometry" />
         </mxCell>
@@ -132,6 +120,36 @@
         </mxCell>
         <mxCell id="aishZJgOiR8-F9n_NxFS-6" value="Task Info" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1039" y="587" width="86" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="o4s9kpA3v8QZ0yGFmZJX-1" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="177" y="794" width="495" height="106" as="geometry" />
+        </mxCell>
+        <mxCell id="XuzBIOFZBx4Q-mBygeml-16" value="Storage&lt;div&gt;Block&lt;/div&gt;&lt;div&gt;chain&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="o4s9kpA3v8QZ0yGFmZJX-1" vertex="1">
+          <mxGeometry width="495" height="106" as="geometry" />
+        </mxCell>
+        <mxCell id="QzRuw6ReyF2sy8QD4RSm-6" value="Arweave" style="rounded=0;whiteSpace=wrap;html=1;" parent="o4s9kpA3v8QZ0yGFmZJX-1" vertex="1">
+          <mxGeometry x="51.53753026634382" y="17.85869565217391" width="112.6634382566586" height="70.28260869565217" as="geometry" />
+        </mxCell>
+        <mxCell id="aishZJgOiR8-F9n_NxFS-1" value="Filecoin" style="rounded=0;whiteSpace=wrap;html=1;" parent="o4s9kpA3v8QZ0yGFmZJX-1" vertex="1">
+          <mxGeometry x="199.55811138014525" y="17.85869565217391" width="112.6634382566586" height="70.28260869565217" as="geometry" />
+        </mxCell>
+        <mxCell id="aishZJgOiR8-F9n_NxFS-2" value="......" style="rounded=0;whiteSpace=wrap;html=1;" parent="o4s9kpA3v8QZ0yGFmZJX-1" vertex="1">
+          <mxGeometry x="342.7845036319613" y="17.85869565217391" width="112.6634382566586" height="70.28260869565217" as="geometry" />
+        </mxCell>
+        <mxCell id="o4s9kpA3v8QZ0yGFmZJX-2" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="691" y="794" width="312" height="107" as="geometry" />
+        </mxCell>
+        <mxCell id="o4s9kpA3v8QZ0yGFmZJX-3" value="Restaking&lt;div&gt;Framework&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="o4s9kpA3v8QZ0yGFmZJX-2">
+          <mxGeometry width="312" height="107.00000000000001" as="geometry" />
+        </mxCell>
+        <mxCell id="o4s9kpA3v8QZ0yGFmZJX-4" value="EigenLayer" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="o4s9kpA3v8QZ0yGFmZJX-2">
+          <mxGeometry x="70.59" y="20.19" width="86.41" height="70.81" as="geometry" />
+        </mxCell>
+        <mxCell id="o4s9kpA3v8QZ0yGFmZJX-5" value="......" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="o4s9kpA3v8QZ0yGFmZJX-2">
+          <mxGeometry x="189.72" y="20.19" width="91.28" height="71.81" as="geometry" />
+        </mxCell>
+        <mxCell id="o4s9kpA3v8QZ0yGFmZJX-7" value="Incentive Info" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1043" y="662" width="86" height="35" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

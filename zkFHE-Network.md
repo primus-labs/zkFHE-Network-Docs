@@ -25,6 +25,8 @@ The core advantages of zkFHE lie in its natural abilities from both zero-knowled
 
   zkFHE confidential computing can guarantee the confidentiality and integrity of computing. Workers can earn computing fees.
 
+  There are two types of workers: one is registered directly through PADO Network, and the other is registered to AVS of PADO Network through the restaking framework (such as Eigen Layer).
+
 * **Network Consumer**
 
   Network Consumer is an individual or organization that uses PADO Network computing and data resources. Network Consumer can specify the encrypted data uploaded by the Data Provider to initiate a confidential computing task and obtain the results of the confidential computing task. Network Consumers are required to pay computing and data fees.
@@ -43,6 +45,8 @@ Comprehensive consideration of multiple perspectives of decentralization, securi
 
   zkFHE confidential computing can guarantee the confidentiality and integrity of computing. Workers can earn computing fees.
 
+  There are two types of workers: one is registered directly through PADO Network, and the other is registered to AVS of PADO Network through the restaking framework (such as Eigen Layer).
+
 * **PADO Contracts**
 
   PADO Contracts is a collection of blockchain contracts that can be deployed on multiple blockchains, including Ethereum, L2, AO, etc. PADO Contracts mainly include Worker management, data management, task management, fee management, Worker incentives, etc.
@@ -59,7 +63,7 @@ Comprehensive consideration of multiple perspectives of decentralization, securi
 
 The logical architecture is shown in the figure below:
 
-![zkFHE-architecture](./images/zkFHE-architecture2.png)
+![zkFHE-architecture](./images/zkFHE-architecture.png)
 
 #### Worker
 
@@ -102,6 +106,10 @@ PADO Scan is a user interface for viewing PADO Network information. PADO Scan ca
 #### Storage Blockchain
 
 Storage Blockchain is used to store encrypted data of Data Provider, including Arweave, Filecoin, Ceramic and Greenfield, etc.
+
+#### Restaking Framework
+
+PADO Network supports Workers registered directly through PADO Network and also supports operators of the Restaking Framework to register to PADO Network AVS. The Restaking Framework includes EigenLayer, etc.
 
 #### Dapps
 
