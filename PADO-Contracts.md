@@ -166,6 +166,8 @@ interface ITaskMgt {
 
 Worker Management Contract include Worker registration and staking, updating Worker information, obtaining Worker information, Worker exiting PADO Network, selecting Workers to run the task, getting task workers and data encryption public key.
 
+PADO Network contains two types of workers. One is the native worker registered by calling the register method of the Worker Management Contract. And the other is the EigenWorker registered by calling the registerEigenOperator method of the Worker Management Contract based on the EigenLayer framework, the EigenWorker is the operator of EigenLayer and is registered with the PADO Network AVS, for details, please refer to [register EigenLayer operator to PADO Network AVS](# Register operator to avs).
+
 The following are the main interfaces:
 
 ```solidity
@@ -212,6 +214,16 @@ interface IWorkerMgt {
         bytes calldata publicKey,
         uint256 stakeAmount
     ) external payable returns (bytes32);
+
+    /**
+     * @notice Register EigenLayer's operator.
+     * @param operatorSignature The signature, salt, and expiry of the operator's signature.
+     */
+    function registerEigenOperator(
+        ISignatureUtils.SignatureWithSaltAndExpiry memory operatorSignature,
+        uint32[] calldata taskTypes,
+        bytes calldata publicKey
+    ) external;
 
     /**
      * @notice TaskMgt contract request selecting workers which will run the task.
@@ -419,13 +431,17 @@ interface IWorkerIncentive {
 
 ## EigenLayer integration
 
-To integrate EigenLayer, an EigenServiceManager contract that inherits the IServiceManager interface of EigenLayer will be implemented.
+To integrate EigenLayer, an EigenServiceManager contract that inherits the IServiceManager interface of EigenLayer will be implemented. Below is the registration and reward process of EigenLayer operator to PADO Network AVS.
 
 ### Register operator to avs
+
+Worker Management and EigenServiceManager contracts belong to PADO Network. And Eigen DelegationManager and AVS Directory contracts belong to EigenLayer.
 
 ![](./images/contracts-register-operator.png)
 
 ### Create avs rewards submission
+
+Worker Incentive and EigenServiceManager contracts belong to PADO Network. And Eigen DelegationManager contract belongs to EigenLayer.
 
 ![](./images/contracts-avs-reward.png)
 
