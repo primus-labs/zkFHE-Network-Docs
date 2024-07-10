@@ -12,7 +12,7 @@ According to the architecture documentation [PADO Network Core Workflow](https:/
 
 ### Multiple Public Key Contracts Core Workflow
 
-![](/Users/fksyuan/work/code/pado-labs/zkFHE-Network-Docs/images/contracts-multiple-publickey.png)
+![](./images/contracts-multiple-publickey.png)
 
 ## Common Contract
 
