@@ -467,7 +467,7 @@ struct DataInfo {
     bytes dataContent; // The content of the data
     uint64 registeredTimestamp; // The timestamp at which the data was registered
     address owner; // The owner of the data
-    bool revoked; // Whether the data is revoked
+    bool deleted; // Whether the data is deleted
 }
 
 /**
@@ -491,43 +491,46 @@ interface IDataMgt {
 
     /**
      * @notice Get all data registered by Data Provider
-     * @param includingRevoked Whether return the revoked data
+     * @param includingDeleted Whether return the deleted data
      * @return return all data
      */
     function getAllData(
-        bool includingRevoked
+        bool includingDeleted
     ) external view returns (DataInfo[] memory);
 
     /**
      * @notice Get data by owner
-     * @param includingRevoked Whether return the revoked data
+     * @param includingDeleted Whether return the deleted data
      * @param owner The owner of data
      * @return return data owned by the owner
      */
     function getDataByOwner(
-        bool includingRevoked,
+        bool includingDeleted,
         address owner
     ) external view returns (DataInfo[] memory);
 
     /**
      * @notice Get data by dataId
-     * @param includingRevoked Whether return the revoked data
+     * @param includingDeleted Whether return the deleted data
      * @param dataId The identifier of the data
      * @return return the data 
      */
     function getDataById(
-        bool includingRevoked,
+        bool includingDeleted,
         bytes32 dataId
     ) external view returns (DataInfo memory);
 
     /**
-     * @notice Revoke data by dataId
+     * @notice Delete data by dataId
      * @param dataId The identifier of the data
      */
-    function revoke(
+    function deleteDataById(
         bytes32 dataId
     ) external;
 }
+
+
+
 ```
 
 
