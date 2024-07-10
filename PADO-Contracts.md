@@ -2,6 +2,8 @@
 
 PADO Contracts is a collection of blockchain contracts that can be deployed on multiple blockchains, including Ethereum, L2, AO, etc. The article takes solidity as an example to design contracts.
 
+For the scalability of PADO Network, all contracts are upgradeable.
+
 ## Contrats Core Workflow
 
 According to the architecture documentation [PADO Network Core Workflow](https://github.com/pado-labs/zkFHE-Network-Docs/blob/main/zkFHE-Network.md#core-workflow), the core workflow is divided into three types, and we will also divide the contracts workflow into three types.
@@ -204,6 +206,7 @@ struct Worker {
     uint8 status; // The current status of the worker.
     uint64 sucTasksAmount; // The number of successfully executed tasks.
     uint64 failTasksAmount; // The number of failed tasks.
+    uint256 delegationAmount; // The delegation amount of the worker.
 }
 
 /**
@@ -249,6 +252,19 @@ interface IWorkerMgt {
         bytes32 taskId,
         uint32 taskType,
         ComputingInfoRequest calldata computingInfoRequest
+    ) external returns (bool);
+
+    /**
+     * @notice DataMgt contract request selecting workers which will encrypt data and run the task.
+     * @param dataId The data id.
+     * @param t Threshold t.
+     * @param n Threshold n.
+     * @return Returns true if the request is successful.
+     */
+    function selectMultiplePublicKeyWorkers(
+        bytes32 dataId,
+        uint32 t;
+        uint32 n;
     ) external returns (bool);
 
     /**
