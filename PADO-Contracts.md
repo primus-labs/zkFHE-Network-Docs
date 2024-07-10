@@ -471,18 +471,37 @@ struct DataInfo {
 }
 
 /**
+ * @notice A struct representing a piece of data
+ */
+struct EncryptionSchema {
+    uint32 t; // threshold
+    uint32 n; // total amount of nodes
+}
+
+/**
  * @title IDataMgt
  * @notice DataMgt - Data Management interface.
  */
 interface IDataMgt {
     /**
+     * @notice Data Provider prepare to register confidential data to PADO Network.
+     * @param encryptionSchema EncryptionSchema
+     * @return registryId and publicKeys Registry id and public keys
+     */
+    function prepareRegistery(
+        EncryptionSchema calldata encryptionSchema
+    ) external returns (bytes32 registryId, bytes[] memory publicKeys);
+
+    /**
      * @notice Data Provider register confidential data to PADO Network.
+     * @param registryId Registry id for registry, returned by prepareRegistry.
      * @param dataTag The tag of data, providing basic information about data.
      * @param priceInfo The price infomation of data.
      * @param dataContent The content of data.
      * @return The UID of the data
      */
     function register(
+        bytes32 registryId,
         string calldata dataTag,
         PriceInfo calldata priceInfo,
         bytes calldata dataContent
