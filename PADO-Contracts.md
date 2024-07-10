@@ -443,6 +443,93 @@ interface IWorkerIncentive {
 ```
 
 ## DataMgt contract
+This contract manage the data uploaded by data provider.
+
+```solidity
+// SPDX-License-Identifier: MIT
+
+pragma solidity ^0.8.20;
+/**
+ * @notice A struct representing a concrete price of a piece of data
+ */
+struct PriceInfo {
+    string tokenSymbol; // The token symbol of price
+    uint256 price;  // The price of data 
+}
+
+/**
+ * @notice A struct representing a piece of data
+ */
+struct DataInfo {
+    bytes32 dataId; // The identifier of the data
+    string dataTag; // The tag of the data
+    PriceInfo priceInfo; // The price of the data
+    bytes dataContent; // The content of the data
+    uint64 registeredTimestamp; // The timestamp at which the data was registered
+    address owner; // The owner of the data
+    bool revoked; // Whether the data is revoked
+}
+
+/**
+ * @title IDataMgt
+ * @notice DataMgt - Data Management interface.
+ */
+interface IDataMgt {
+    /**
+     * @notice Data Provider register confidential data to PADO Network.
+     * @param dataTag The tag of data, providing basic information about data.
+     * @param priceInfo The price infomation of data.
+     * @param dataContent The content of data.
+     * @return The UID of the data
+     */
+    function register(
+        string calldata dataTag,
+        PriceInfo calldata priceInfo,
+        bytes calldata dataContent
+    ) external returns (bytes32);
+    
+
+    /**
+     * @notice Get all data registered by Data Provider
+     * @param includingRevoked Whether return the revoked data
+     * @return return all data
+     */
+    function getAllData(
+        bool includingRevoked
+    ) external view returns (DataInfo[] memory);
+
+    /**
+     * @notice Get data by owner
+     * @param includingRevoked Whether return the revoked data
+     * @param owner The owner of data
+     * @return return data owned by the owner
+     */
+    function getDataByOwner(
+        bool includingRevoked,
+        address owner
+    ) external view returns (DataInfo[] memory);
+
+    /**
+     * @notice Get data by dataId
+     * @param includingRevoked Whether return the revoked data
+     * @param dataId The identifier of the data
+     * @return return the data 
+     */
+    function getDataById(
+        bool includingRevoked,
+        bytes32 dataId
+    ) external view returns (DataInfo memory);
+
+    /**
+     * @notice Revoke data by dataId
+     * @param dataId The identifier of the data
+     */
+    function revoke(
+        bytes32 dataId
+    ) external;
+}
+```
+
 
 ## EigenLayer integration
 
