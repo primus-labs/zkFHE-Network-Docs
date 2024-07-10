@@ -2,6 +2,18 @@
 
 PADO Contracts is a collection of blockchain contracts that can be deployed on multiple blockchains, including Ethereum, L2, AO, etc. The article takes solidity as an example to design contracts.
 
+## Contrats Core Workflow
+
+According to the architecture documentation [PADO Network Core Workflow](https://github.com/pado-labs/zkFHE-Network-Docs/blob/main/zkFHE-Network.md#core-workflow), the core workflow is divided into three types, and we will also divide the contracts workflow into three types.
+
+### Threshold Public Key Contracts Core Workflow
+
+### User Secret Key Contracts Core Workflow
+
+### Multiple Public Key Contracts Core Workflow
+
+![](/Users/fksyuan/work/code/pado-labs/zkFHE-Network-Docs/images/contracts-multiple-publickey.png)
+
 ## Common Contract
 
 ```solidity
@@ -182,6 +194,7 @@ import { ComputingInfoRequest } from "./Common.sol";
  */
 struct Worker {
     bytes32 workerId; // The UID of the worker.
+    uint8 workerType; // The type of the worker.
     string name; // The worker name.
     string desc; // The worker description.
     uint256 stakeAmount; // The stake amount of the worker.
@@ -428,6 +441,8 @@ interface IWorkerIncentive {
     function userRewardBalance(address userAddress) external view returns (uint256);
 }
 ```
+
+## DataMgt contract
 
 ## EigenLayer integration
 
