@@ -21,15 +21,15 @@ The core advantages of zkFHE lie in its natural abilities from both zero-knowled
 
   Worker is a node of PADO Network, providing computing resources, running the zkFHE algorithm on encrypted data, and providing PADO Network with a confidential computing environment and resources. Worker needs to generate a zk proof while computing.
 
-  Worker also needs to provide the Data Encryption Public Key to Data Provider to encrypt the data, and at the same time, it needs to re-encrypt the confidential computation results into results that only the Network Consumer can decrypt.
+  Worker also needs to provide the Data Encryption Public Key to Data Provider to encrypt the data, and at the same time, it needs to re-encrypt the confidential computation results into results that only the Caller can decrypt.
 
   zkFHE confidential computing can guarantee the confidentiality and integrity of computing. Workers can earn computing fees.
 
   There are two types of workers: one is registered directly through PADO Network, and the other is registered to AVS of PADO Network through the restaking framework (such as Eigen Layer).
 
-* **Network Consumer**
+* **Caller**
 
-  Network Consumer is an individual or organization that uses PADO Network computing and data resources. Network Consumer can specify the encrypted data uploaded by the Data Provider to initiate a confidential computing task and obtain the results of the confidential computing task. Network Consumers are required to pay computing and data fees.
+  Caller is an individual or organization that uses PADO Network computing and data resources. Caller can specify the encrypted data uploaded by the Data Provider to initiate a confidential computing task and obtain the results of the confidential computing task. Callers are required to pay computing and data fees.
 
 ## Architecture
 
@@ -41,7 +41,7 @@ Comprehensive consideration of multiple perspectives of decentralization, securi
 
   Worker is a node of PADO Network, providing computing resources, running the zkFHE algorithm on encrypted data, and providing PADO Network with a confidential computing environment and resources. Worker needs to generate a zk proof while computing.
 
-  Worker also needs to provide the Data Encryption Public Key to Data Provider to encrypt the data, and at the same time, it needs to re-encrypt the confidential computation results into results that only the Network Consumer can decrypt.
+  Worker also needs to provide the Data Encryption Public Key to Data Provider to encrypt the data, and at the same time, it needs to re-encrypt the confidential computation results into results that only the Caller can decrypt.
 
   zkFHE confidential computing can guarantee the confidentiality and integrity of computing. Workers can earn computing fees.
 
@@ -86,17 +86,17 @@ PADO Contracts is a collection of blockchain contracts that can be deployed on m
 
 * **Worker Management**: Worker registration and staking, updating Worker information, obtaining Worker information, and Worker exiting PADO Network.
 * **Task Management:** Receive confidential computing tasks submitted by SDK, receive zkFHE computing results submitted by Worker and verify the results, and obtain pending tasks and completed tasks.
-* **Fee Management:** Settle the Network Consumer's fee to the Data Provider and Worker.
+* **Fee Management:** Settle the Caller's fee to the Data Provider and Worker.
 * **Worker Incentive:** Responsible for the calculation of reward and penalty funds, providing rewards to honest and stable Workers and penalties to dishonest and unstable Workers.
 
 #### PADO SDK
 
 PADO SDK is a collection of developer development tools. Developers can use the confidential computing capabilities of PADO Network through the SDK and develop various confidential computing applications based on PADO Network. PADO SDK consists of the following parts:
 
-* **Key Management:** Responsible for providing zkFHE key generation and management interfaces to Data Provider and Network Consumer.
+* **Key Management:** Responsible for providing zkFHE key generation and management interfaces to Data Provider and Caller.
 * **Upload Data:** Responsible for encrypting Data Provider data and then uploading the encrypted data to the Storage Blockchain.
-* **Submit Task:** Provide Network Consumers with the ability to submit confidential computing tasks and pay fees.
-* **Get Result:** Provide the confidential computing task results to the Network Consumer. The Network Consumer obtains the encrypted results and then decrypts them locally.
+* **Submit Task:** Provide Callers with the ability to submit confidential computing tasks and pay fees.
+* **Get Result:** Provide the confidential computing task results to the Caller. The Caller obtains the encrypted results and then decrypts them locally.
 * **Developer Tool:** Compilation and debugging tools for developers.
 
 #### PADO Scan
@@ -117,19 +117,19 @@ Various ecological applications developed based on PADO SDK and PADO Contracts. 
 
 ### Core Workflow
 
-According to the classification of data encryption keys, it can be divided into the following three categories:
+According to the FHE classification of data encryption keys, FHE can be divided into the following three categories:
 
-* Threshold Public Key: Use the shared public generated by multiple Workers to encrypt data.
-* User Secret Key: Use the user's own key to encrypt data.
-* Multiple Public Key: Use the public keys of multiple Workers to encrypt data.
+* Threshold FHE: Use the shared public generated by multiple Workers to encrypt data.
+* Single-Key FHE: Use the user's own key to encrypt data.
+* Multi-Key FHE: Use the public keys of multiple Workers to encrypt data.
 
 Core workflow can be divided into three categories accordingly.
 
-#### Threshold Public Key Core Workflow
+#### Threshold FHE Core Workflow
 
-Threshold Public Key use the shared public generated by multiple Workers to encrypt data.
+Threshold FHE use the shared public generated by multiple Workers to encrypt data.
 
-The threshold public key core workflow is shown in the figure below:
+The threshold FHE core workflow is shown in the figure below:
 
 ![zkFHE-architecture-process](./images/zkFHE-architecture-process2.png)
 
@@ -139,7 +139,7 @@ After the Worker is started, it must be registered to the Worker Management of P
 
 ##### Submit Task and Get Data Encryption Public Key
 
-Network Consumer can submit a confidential computing task through an application developed based on PADO SDK. Initiating a confidential computing task requires paying a certain amount of computing and data fees. When Network Consumer initiates a task, it will pass its own Network Consumer Public Key, and the final encrypted computation result is only the private key corresponding to the Network Consumer Public Key can be decrypted.
+Caller can submit a confidential computing task through an application developed based on PADO SDK. Initiating a confidential computing task requires paying a certain amount of computing and data fees. When Caller initiates a task, it will pass its own Caller Public Key, and the final encrypted computation result is only the private key corresponding to the Caller Public Key can be decrypted.
 
 Then the PADO SDK forwards the Submit Task request to the Task Management of PADO Contacts. The Task Management selects the Workers who generate the Data Encryption Public Key and the Workers who execute the task. The two Worker groups can be the same.
 Then Workers return the Data Encryption Public Key to the Task Management contract.
@@ -157,7 +157,7 @@ The Workers who execute the task will get the task from the Task Management Cont
 
 ##### Result Re-encrypt
 
-The Workers who generate the Data Encryption Public Key will re-encrypt the confidential computation results using the Network Consumer Public Key, so that only the Network Consumer can decrypt the results.
+The Workers who generate the Data Encryption Public Key will re-encrypt the confidential computation results using the Caller Public Key, so that only the Caller can decrypt the results.
 
 ##### Proof Verify and Fee Settlement
 
@@ -165,32 +165,32 @@ The Workers upload the encrypted results and computation proofs to the Task Mana
 
 ##### Decrypt Result
 
-Network Consumer will use its own private key and the FHE algorithm in the SDK to decrypt the computation results.
+Caller will use its own private key and the FHE algorithm in the SDK to decrypt the computation results.
 
-#### User Secret Key Core Workflow
+#### Single-Key FHE Core Workflow
 
-User Secret Key use the user's own key to encrypt data.
+Single-Key FHE use the user's own key to encrypt data.
 
-The user secret key core workflow is similar to the threshold public key core workflow, with the following main differences:
-* The Network Consumer and Data Provider are the same person.
-* When selecting Workers, you only need to select the Workers that execute the task, not the Workers that generate the data encryption key. This is because the user secret key uses the user's own key to encrypt data.
+Single-Key FHE core workflow is similar to the Threshold FHE core workflow, with the following main differences:
+* The Caller and Data Provider are the same person.
+* When selecting Workers, you only need to select the Workers that execute the task, not the Workers that generate the data encryption key. This is because the Single-Key FHE uses the user's own key to encrypt data.
 * The Result Re-encryption process is not required because the data is encrypted using its own key.
 
-The user secret key core workflow is shown in the figure below:
+The Single-Key FHE core workflow is shown in the figure below:
 
 ![](./images/user-secret-key.png)
 
-#### Multiple Public Key Core Workflow
+#### Multi-Key FHE Core Workflow
 
-Multiple Public Key use the public keys of multiple Workers to encrypt data.
+Multi-Key FHE use the public keys of multiple Workers to encrypt data.
 
-The multiple public key core workflow is shown in the figure below:
+Multi-Key FHE core workflow is shown in the figure below:
 
 ![](./images/multiple-publickey-process.png)
 
 ##### Register Worker
 
-The multiple public key register worker process is the same as  [Threshold Public Key Register Worker](#Register Worker).
+The Multi-Key FHE register worker process is the same as  [Threshold FHE Register Worker](#Register Worker).
 
 ##### Get Workers Public Keys and Upload Data
 
@@ -202,19 +202,19 @@ Then Data Provider use the FHE algorithm of PADO SDK and the Workers' public key
 
 ##### Submit Task
 
-Network Consumer can submit a confidential computing task through an application developed based on PADO SDK. Initiating a confidential computing task requires paying a certain amount of computing and data fees. When Network Consumer initiates a task, it will pass its own Network Consumer Public Key, and the final encrypted computation result is only the private key corresponding to the Network Consumer Public Key can be decrypted.
+Caller can submit a confidential computing task through an application developed based on PADO SDK. Initiating a confidential computing task requires paying a certain amount of computing and data fees. When Caller initiates a task, it will pass its own Caller Public Key, and the final encrypted computation result is only the private key corresponding to the Caller Public Key can be decrypted.
 
 ##### zkFHE Computing
 
-The multiple public key zkFHE Computing process is the same as  [Threshold Public Key zkFHE Computing](#zkFHE Computing), but run different zkFHE algorithms.
+The Multi-Key zkFHE Computing process is the same as  [Threshold zkFHE Computing](#zkFHE Computing), but run different zkFHE algorithms.
 
 ##### Proof Verify and Fee Settlement
 
-The multiple public key Proof Verify and Fee Settlement process is the same as  [Threshold Public Key Proof Verify and Fee Settlement](#Proof Verify and Fee Settlement).
+The Multi-Key FHE Proof Verify and Fee Settlement process is the same as  [Threshold FHE Proof Verify and Fee Settlement](#Proof Verify and Fee Settlement).
 
 ##### Decrypt Result
 
-The multiple public key Decrypt Result process is the same as  [Threshold Public Key Decrypt Result](#Decrypt Result).
+The Multi-Key FHE Decrypt Result process is the same as  [Threshold FHE Decrypt Result](#Decrypt Result).
 
 ## Economics
 The functionality of blockchain-like systems is based on a combination of cryptography and economic incentives. Cryptography restricts the actions of system participants for network security. On the other hand, economic incentives motivate participants to voluntarily contribute to the network's maintenance and capabilities using their own resources.
@@ -223,7 +223,7 @@ PADO network operates as a chain-agnostic open computation layer. PADO achieves 
 
 ### Computation Fees
 
-To utilize the zkFHE computation network, computation fees were paid by network consumers with coins like USDT/USDC, etc. Note if a computation task involves any data inputs supplied by the data providers, the additional fees shall be added and shared by the providers according to the allocation plan specified in the task.
+To utilize the zkFHE computation network, computation fees were paid by Callers with coins like USDT/USDC, etc. Note if a computation task involves any data inputs supplied by the data providers, the additional fees shall be added and shared by the providers according to the allocation plan specified in the task.
 
 ### Incentives
 
